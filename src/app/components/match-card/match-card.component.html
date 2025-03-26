@@ -1,0 +1,22 @@
+<div class="container">
+  <mat-card appearance="outlined" (click)="openDialog()">
+    <mat-card-content>
+      <div class="content">
+        <div class="team-content">
+          <img [src]="`/img/${match.teamA.logo}`" class="header-image" />
+          <span>{{ match.teamA.name }}</span>
+        </div>
+        <div class="score-content">
+          <div>{{ match.teamAScore }}</div>
+          <div>-</div>
+          <div>{{ match.teamBScore }}</div>
+        </div>
+        <div class="team-content">
+          <img [src]="`/img/${match.teamB.logo}`" class="header-image" />
+          <span>{{ match.teamB.name }}</span>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+

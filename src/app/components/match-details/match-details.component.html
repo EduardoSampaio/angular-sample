@@ -1,0 +1,66 @@
+<h2 mat-dialog-title class="dialog-title">Match Statistics</h2>
+<mat-dialog-content class="mat-typography">
+<div class="content">
+  <div class="team-content">
+    <img [src]="`/img/${match.teamA.logo}`" class="header-image" />
+    <span>{{ match.teamA.name }}</span>
+  </div>
+  <div class="score-content">
+    <div>{{ match.teamAScore }}</div>
+    <div>-</div>
+    <div>{{ match.teamBScore }}</div>
+  </div>
+  <div class="team-content">
+    <img [src]="`/img/${match.teamB.logo}`" class="header-image" />
+    <span>{{ match.teamB.name }}</span>
+  </div>
+</div>
+<div class="stats">
+  <ul>
+    <li class="stats-item">
+      <div class="item">{{ match.statsA.ballPossession }}</div>
+      <div class="item">Ball Possession</div>
+      <div class="item">{{ match.statsB.ballPossession }}</div>
+    </li>
+    <li class="stats-item">
+      <div class="item">{{ match.statsA.shots }}</div>
+      <div class="item">Shots</div>
+      <div class="item">{{ match.statsB.shots }}</div>
+    </li>
+    <li class="stats-item">
+      <div class="item">{{ match.statsA.shotsOnTarget }}</div>
+      <div class="item">Shots on Target</div>
+      <div class="item">{{ match.statsB.shotsOnTarget }}</div>
+    </li>
+    <li class="stats-item">
+      <div class="item">{{ match.statsA.corners }}</div>
+      <div class="item">Corners</div>
+      <div class="item">{{ match.statsB.corners }}</div>
+    </li>
+    <li class="stats-item">
+      <div class="item">{{ match.statsA.foulsCommitted }}</div>
+      <div class="item">Fouls Committed</div>
+      <div class="item">{{ match.statsB.foulsCommitted }}</div>
+    </li>
+    <li class="stats-item">
+      <div class="item">{{ match.statsA.redCards }}</div>
+      <div class="item">Red Cards</div>
+      <div class="item">{{ match.statsB.redCards }}</div>
+    </li>
+    <li class="stats-item">
+      <div class="item">{{ match.statsA.yellowCards }}</div>
+      <div class="item">Yellow Cards</div>
+      <div class="item">{{ match.statsB.yellowCards }}</div>
+    </li>
+    <li class="stats-item">
+      <div class="item">{{ match.statsA.offsides }}</div>
+      <div class="item">Offsides</div>
+      <div class="item">{{ match.statsB.offsides }}</div>
+    </li>
+  </ul>
+</div>
+<mat-dialog-actions align="center">
+  <button mat-button mat-dialog-close >Close</button>
+</mat-dialog-actions>
+</mat-dialog-content>
+

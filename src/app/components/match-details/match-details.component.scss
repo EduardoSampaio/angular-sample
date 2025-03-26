@@ -1,0 +1,69 @@
+:host {
+  display: block;
+}
+
+.header-image {
+  width: 50px;
+  height: 50px;
+}
+
+.content{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.team-content{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.team-content span {
+  margin: 10px;
+}
+
+.score-content {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  font-weight: 500;
+  align-items: center;
+}
+
+.dialog-title {
+  text-align: center;
+}
+
+.stats{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.stats ul > li{
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.stats-list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.stats-item{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  flex: 1;
+  text-align: center;
+  margin-left: 10px;
+}

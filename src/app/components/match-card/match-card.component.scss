@@ -1,0 +1,68 @@
+:host {
+  display: block;
+}
+
+mat-card-content {
+  margin: 10px;
+}
+
+.container {
+  margin: 5px;
+}
+
+mat-card:hover {
+  cursor: pointer;
+  background-color: cornflowerblue;
+}
+
+.header-image {
+  width: 80px;
+  height: 80px;
+}
+
+.content {
+  display: flex;
+  width: 320px;
+  flex-direction: row wrap;
+  justify-content: space-between;
+}
+
+.team-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.team-content span {
+  margin: 10px;
+}
+
+.score-content {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5rem;
+  font-weight: 500;
+  align-items: center;
+}
+
+mat-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 764px) {
+  mat-card {
+    width: 100% !important;
+    max-width: 600px;
+  }
+  .content {
+    width: 100%;
+    flex-direction: row wrap;
+    justify-content: center;
+  }
+}
